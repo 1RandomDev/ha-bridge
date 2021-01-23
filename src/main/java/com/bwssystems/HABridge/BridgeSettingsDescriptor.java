@@ -21,6 +21,9 @@ public class BridgeSettingsDescriptor {
 	@SerializedName("serverport")
 	@Expose
 	private Integer serverport;
+	@SerializedName("proxyserverport")
+	@Expose
+	private Integer proxyserverport;
 	@SerializedName("upnpresponseport")
 	@Expose
 	private Integer upnpresponseport;
@@ -238,6 +241,18 @@ public class BridgeSettingsDescriptor {
 
 	public void setServerPort(String serverPort) {
 		this.serverport = Integer.valueOf(serverPort);
+	}
+
+	public Integer getProxyServerPort() {
+		return proxyserverport;
+	}
+
+	public void setProxyServerPort(Integer proxyserverport) {
+		this.proxyserverport = proxyserverport;
+	}
+
+	public void setProxyServerPort(String proxyserverport) {
+		this.proxyserverport = Integer.valueOf(proxyserverport);
 	}
 
 	public Integer getUpnpResponsePort() {

@@ -189,6 +189,9 @@ public class BridgeSettings extends BackupHandler {
         
         if(theBridgeSettings.getServerPort() == null)
         	theBridgeSettings.setServerPort(Configuration.DEFAULT_WEB_PORT);
+
+		if(theBridgeSettings.getProxyServerPort() == null)
+			theBridgeSettings.setProxyServerPort(Configuration.PROXY_WEB_PORT);
         
         if(theBridgeSettings.getUpnpDeviceDb() == null)
         	theBridgeSettings.setUpnpDeviceDb(Configuration.DEVICE_DB_DIRECTORY);

@@ -78,7 +78,7 @@ public class UpnpListener {
 		super();
 		theUDPDatagramSender = aUdpDatagramSender;
 		upnpMulticastSocket = null;
-		httpServerPort = Integer.valueOf(theSettings.getBridgeSettingsDescriptor().getServerPort());
+		httpServerPort = Integer.valueOf(theSettings.getBridgeSettingsDescriptor().getProxyServerPort());
 		upnpConfigIP = theSettings.getBridgeSettingsDescriptor().getUpnpConfigAddress();
 		// strict = theSettings.isUpnpStrict();
 		upnpOriginal = theSettings.getBridgeSettingsDescriptor().isUpnporiginal();

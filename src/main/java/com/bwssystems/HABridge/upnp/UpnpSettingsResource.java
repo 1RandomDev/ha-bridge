@@ -88,7 +88,7 @@ public class UpnpSettingsResource {
 				return null;
 			}
 			
-			String portNumber = Integer.toString(request.port());
+			String portNumber = Integer.toString(theSettings.getProxyServerPort());
 			String filledTemplate = null;
 			String httpLocationAddr = null;
 			String hueTemplate = null;
