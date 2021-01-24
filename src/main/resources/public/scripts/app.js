@@ -3707,7 +3707,7 @@ app.controller('HassController', function ($scope, $location, bridgeService, ngD
 			dimpayload = "{\"entityId\":\"" + hassdevice.deviceState.entity_id + "\",\"hassName\":\"" + hassdevice.hassname + "\",\"state\":\"on\"}";
 		offpayload = "{\"entityId\":\"" + hassdevice.deviceState.entity_id + "\",\"hassName\":\"" + hassdevice.hassname + "\",\"state\":\"off\"}";
 
-		bridgeService.buildUrls(onpayload, dimpayload, offpayload, null, true, hassdevice.hassname + "-" + hassdevice.deviceState.entity_id, hassdevice.deviceState.entity_id, hassdevice.hassname, "switch", "hassDevice", null, null);
+		bridgeService.buildUrls(onpayload, dimpayload, offpayload, null, true, hassdevice.hassname + "-" + hassdevice.deviceState.entity_id, hassdevice.deviceName, hassdevice.hassname, "switch", "hassDevice", null, null);
 		$scope.device = bridgeService.state.device;
 		if (!buildonly) {
 			bridgeService.editNewDevice($scope.device);
